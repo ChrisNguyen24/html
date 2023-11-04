@@ -1,0 +1,237 @@
+@charset "UTF-8";
+body {
+  max-width: 1440px;
+  font-family: "Arimo", sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+}
+body header {
+  background-color: #141414;
+  display: flex;
+}
+body header .header-wrapper .inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4em 1rem;
+  gap: 70px;
+}
+@media screen and (min-width: 768px) {
+  body header .header-wrapper .inner {
+    display: flex;
+    padding: 50px;
+  }
+}
+body header .header-wrapper .inner .header-logo img {
+  width: 80px;
+  object-fit: contain;
+}
+@media screen and (min-width: 768px) {
+  body header .header-wrapper .inner .header-logo img {
+    width: 160px;
+  }
+}
+body header .header-wrapper .inner .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body header .header-wrapper .inner .right .header-text, body header .header-wrapper .inner .right .header-sub-text {
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  body header .header-wrapper .inner .right .header-text, body header .header-wrapper .inner .right .header-sub-text {
+    font-size: 3.8rem;
+  }
+}
+body header .header-wrapper .inner .right .header-text {
+  color: #FFF;
+}
+body header .header-wrapper .inner .right .header-sub-text {
+  color: #2178BD;
+}
+body main .site-wrapper {
+  padding: 4rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  body main .site-wrapper {
+    display: flex;
+    padding: 4rem 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body main .site-wrapper {
+    display: flex;
+    padding: 70px 136px;
+  }
+}
+body main .site-wrapper .site-inner section .inner .title {
+  font-size: 2rem;
+  color: #2178BD;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  body main .site-wrapper .site-inner section .inner .title {
+    font-size: 2.5rem;
+  }
+}
+body main .site-wrapper .site-inner section .inner .content {
+  margin: 27px auto;
+  font-weight: 400;
+  color: #5C5D5E;
+  font-size: 1.5rem;
+}
+body main .site-wrapper .site-inner section .inner .content:last-child {
+  margin-bottom: 66px;
+}
+body main .site-wrapper .site-inner section .inner .content .image-and-content {
+  text-align: center;
+  padding-top: 46px;
+}
+@media screen and (min-width: 1024px) {
+  body main .site-wrapper .site-inner section .inner .content .image-and-content {
+    display: flex;
+    gap: 60px;
+    text-align: left;
+  }
+}
+body main .site-wrapper .site-inner section .inner .content .image-and-content img {
+  width: 140px;
+  object-fit: contain;
+}
+@media screen and (min-width: 768px) {
+  body main .site-wrapper .site-inner section .inner .content .image-and-content img {
+    width: 300px;
+  }
+}
+body main .site-wrapper .site-inner section .inner .content .image-and-content ul {
+  padding: 0 0 0 24px;
+  text-align: left;
+  margin: 18px 0 0;
+}
+@media screen and (min-width: 1024px) {
+  body main .site-wrapper .site-inner section .inner .content .image-and-content ul {
+    margin: 0;
+  }
+}
+body main .site-wrapper .site-inner section .inner .content .image-and-content ul li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+body main .site-wrapper .site-inner section .inner .content .image-and-content ul li::before {
+  content: "•"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #2178BD; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 15px; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+body main .site-wrapper .site-inner .block-consuming {
+  background-color: #00ADEE;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  body main .site-wrapper .site-inner .block-consuming {
+    padding: 46px 44px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body main .site-wrapper .site-inner .block-consuming {
+    padding: 56px 88px;
+  }
+}
+body main .site-wrapper .site-inner .block-consuming h3 {
+  color: black;
+  margin: 0 0 36px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  body main .site-wrapper .site-inner .block-consuming h3 {
+    margin: 0 0 53px;
+    font-size: 2.5rem;
+  }
+}
+body main .site-wrapper .site-inner .block-consuming p {
+  color: #FFF;
+  font-size: 1.5rem;
+  margin: 20px 0 36px;
+}
+@media screen and (min-width: 768px) {
+  body main .site-wrapper .site-inner .block-consuming p {
+    margin: 53px 0 59px;
+  }
+}
+body main .site-wrapper .site-inner .block-consuming .action-wrapper {
+  text-align: center;
+}
+body main .site-wrapper .site-inner .block-consuming .action-wrapper a {
+  border-radius: 20px;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+  color: #FFF;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  body main .site-wrapper .site-inner .block-consuming .action-wrapper a {
+    font-size: 2.5rem;
+  }
+}
+body main .site-wrapper .site-inner .block-consuming .action-wrapper a:hover {
+  background-color: #FFF;
+  color: black;
+}
+body footer {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: black;
+}
+@media screen and (min-width: 768px) {
+  body footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body footer {
+    display: flex;
+    padding: 42px 136px;
+  }
+}
+body footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  body footer .left {
+    margin-bottom: unset;
+    gap: unset;
+  }
+}
+body footer .left a {
+  text-transform: none;
+  color: #00ADEE;
+  text-decoration: none;
+}
+body footer .left a:hover {
+  text-decoration: underline;
+}
+body footer .right {
+  color: #FFF;
+  font-weight: 400;
+}

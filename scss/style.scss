@@ -1,0 +1,240 @@
+$color-white : #FFF;
+$color-blue: #2178BD;
+$color-bg-blue: #00ADEE;
+$color-font: #5C5D5E;
+$header-bg-color:#141414;
+$color-font-black: black;
+$header-md-fs: 3.8rem;
+$header-sm-fs: 3rem;
+$title-fs: 2.5rem;
+$title-sm-fs: 2rem;
+$content-fs: 1.5rem;
+$footer-fs: 1rem;
+
+
+body {
+    max-width: 1440px;
+    font-family: 'Arimo', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+
+    header {
+        .header-wrapper {
+            .inner {
+                margin-left: auto;
+                margin-right: auto;
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    padding: 50px;
+                }
+
+                padding: 4em 1rem;
+                gap: 70px;
+                .header-logo {
+                    img {
+                        width: 80px;
+                        object-fit: contain;
+                        @media screen and (min-width: 768px) {
+                            width: 160px;
+                        }
+                    }
+                }
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .header-text,.header-sub-text {
+                        margin: 0;
+                        font-size: 2.3rem;
+                        font-weight: 400;
+                        @media screen and (min-width: 768px) {
+                            font-size: $header-md-fs;
+                        }
+                    }
+                    .header-text {
+                        color: $color-white;
+                    }
+                    .header-sub-text {
+                        color: $color-blue;
+                    }
+                }
+            }
+        }
+        background-color: $header-bg-color;
+        display: flex;
+    }
+    main {
+        .site-wrapper {
+            padding: 4rem 1rem;
+            @media screen and (min-width: 768px) {
+                display: flex;
+                padding: 4rem 3rem;
+            }
+            @media screen and (min-width: 1024px) {
+                display: flex;
+                padding: 70px 136px;
+            }
+            .site-inner {
+                section {
+                    .inner {
+                        .title {
+                            font-size: $title-sm-fs;
+                            @media screen and (min-width: 768px) {
+                                font-size: $title-fs;
+                            }
+
+                            color: $color-blue;
+                            margin: 0;
+                            padding: 0;
+                            font-weight: 500;
+                        }
+                        .content {
+                            margin: 27px auto;
+                            &:last-child {
+                                margin-bottom: 66px;
+                            }
+                            font-weight: 400;
+                            color: $color-font;
+                            font-size: $content-fs;
+                            .image-and-content {
+                                text-align: center;
+                                @media screen and (min-width: 1024px) {
+                                    display: flex;
+                                    gap: 60px;
+                                    text-align: left;
+                                }
+                                img {
+                                    width: 140px;
+                                    object-fit: contain;
+                                    @media screen and (min-width: 768px) {
+                                        width: 300px;
+                                    }
+                                }
+                                padding-top: 46px;
+                                ul {
+                                    padding: 0 0 0 24px;
+                                    text-align: left;
+                                    margin: 18px 0 0;
+                                    @media screen and (min-width: 1024px) {
+                                        margin: 0;
+
+                                    }
+                                    li {
+                                        list-style: none;
+                                        margin-bottom: 20px;
+                                        &::before {
+                                            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                                            color: $color-blue; /* Change the color */
+                                            font-weight: bold; /* If you want it to be bold */
+                                            display: inline-block; /* Needed to add space between the bullet and the text */
+                                            width: 15px; /* Also needed for space (tweak if needed) */
+                                            margin-left: -1em; /* Also needed for space (tweak if needed) */
+                                        }
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .block-consuming {
+                    background-color: $color-bg-blue;
+                    @media screen and (min-width: 768px) {
+                        padding: 46px 44px;
+                    }
+                    @media screen and (min-width: 1024px) {
+                        padding: 56px 88px;
+                    }
+                    padding: 1rem;
+
+                    h3 {
+                        color: $color-font-black;
+                        margin: 0 0 36px;
+                        padding: 0;
+                        font-weight: 700;
+                        font-size: $title-sm-fs;
+                        @media screen and (min-width: 768px) {
+                            margin: 0 0 53px;
+                            font-size: $title-fs;
+                        }
+                    }
+                    p {
+                        color: $color-white;
+                        font-size: $content-fs;
+                        margin: 20px 0 36px;
+                        @media screen and (min-width: 768px) {
+                            margin: 53px 0 59px;
+                        }
+                    }
+                    .action-wrapper {
+                        text-align: center;
+                        a {
+                            border-radius: 20px;
+                            font-weight: 400;
+                            display: inline-block;
+                            margin-right: auto;
+                            margin-left: auto;
+
+                            background-color: $color-font-black;
+                            color: $color-white;
+                            padding: 1rem 2rem;
+                            font-size: 1.3rem;
+                            @media screen and (min-width: 768px) {
+                                font-size: $title-fs;
+
+                            }
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            &:hover {
+                                background-color: $color-white;
+                                color: $color-font-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        font-size: $footer-fs;
+
+
+        padding: 1rem;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 42px 3rem;
+        }
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            padding: 42px 136px;
+        }
+
+
+        background-color: $color-font-black;
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            margin-bottom: 1rem;
+            @media screen and (min-width: 768px) {
+                margin-bottom: unset;
+                gap: unset;
+            }
+            a {
+                text-transform: none;
+                color: $color-bg-blue;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .right {
+            color: $color-white;
+            font-weight: 400;
+        }
+    }
+}
