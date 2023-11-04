@@ -26,6 +26,12 @@ body {
                 @media screen and (min-width: 768px) {
                     display: flex;
                     padding: 50px;
+                    justify-content: space-between;
+                }
+                @media screen and (min-width: 1024px) {
+                    display: flex;
+                    padding: 50px 128px;
+                    justify-content: space-between;
                 }
 
                 padding: 4em 1rem;
@@ -61,7 +67,6 @@ body {
             }
         }
         background-color: $header-bg-color;
-        display: flex;
     }
     main {
         .site-wrapper {

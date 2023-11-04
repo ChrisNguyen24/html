@@ -7,7 +7,6 @@ body {
 }
 body header {
   background-color: #141414;
-  display: flex;
 }
 body header .header-wrapper .inner {
   margin-left: auto;
@@ -19,6 +18,14 @@ body header .header-wrapper .inner {
   body header .header-wrapper .inner {
     display: flex;
     padding: 50px;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body header .header-wrapper .inner {
+    display: flex;
+    padding: 50px 128px;
+    justify-content: space-between;
   }
 }
 body header .header-wrapper .inner .header-logo img {
