@@ -19,7 +19,7 @@ body {
     margin-left: auto;
     margin-top: 0;
     header {
-        border-top: 25px solid $color-bg-blue;
+        border-top: 22px solid $color-bg-blue;
         .header-wrapper {
             .inner {
                 margin-left: auto;
@@ -31,7 +31,7 @@ body {
                 }
                 @media screen and (min-width: 1024px) {
                     display: flex;
-                    padding: 50px 128px;
+                    padding: 33px 128px 45px;
                     justify-content: space-between;
                 }
 
@@ -39,7 +39,7 @@ body {
                 gap: 70px;
                 .header-logo {
                     img {
-                        width: 80px;
+                        width: 120px;
                         object-fit: contain;
                         @media screen and (min-width: 768px) {
                             width: 210px;
@@ -67,18 +67,18 @@ body {
                 }
             }
         }
-        background-color: $header-bg-color;
+        background-color: #131313;
     }
     main {
         .site-wrapper {
             padding: 4rem 1rem;
             @media screen and (min-width: 768px) {
                 display: flex;
-                padding: 4rem 3rem;
+                padding: 58px 3rem;
             }
             @media screen and (min-width: 1024px) {
                 display: flex;
-                padding: 90px 136px;
+                padding: 70px 136px;
             }
             .site-inner {
                 section {
@@ -97,9 +97,10 @@ body {
                         .content {
                             margin: 27px auto;
                             &:last-child {
-                                margin-bottom: 80px;
+                                margin-bottom: 66px;
                             }
                             font-weight: 400;
+                            line-height: 140%;
                             color: $color-font;
                             font-size: $content-fs;
                             .image-and-content {
@@ -114,6 +115,7 @@ body {
                                     object-fit: contain;
                                     @media screen and (min-width: 768px) {
                                         width: 300px;
+                                        margin-top: -27px;
                                     }
                                 }
                                 padding-top: 46px;
@@ -127,7 +129,8 @@ body {
                                     }
                                     li {
                                         list-style: none;
-                                        margin-bottom: 20px;
+                                        margin-bottom: 16px;
+
                                         &::before {
                                             content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
                                             color: $color-blue; /* Change the color */
@@ -150,7 +153,7 @@ body {
                         padding: 46px 44px;
                     }
                     @media screen and (min-width: 1024px) {
-                        padding: 56px 88px;
+                        padding: 45px 78px;
                     }
                     padding: 1rem;
 
@@ -161,17 +164,18 @@ body {
                         font-weight: 700;
                         font-size: $title-sm-fs;
                         @media screen and (min-width: 768px) {
-                            margin: 0 0 53px;
-                            font-size: $title-fs;
+                            margin: 0 0 35px;
+                            font-size: 2.4rem;
                         }
                     }
                     p {
                         color: $color-white;
                         font-size: $content-fs;
-                        margin: 20px 0 36px;
+                        margin: 0px 0 36px;
                         @media screen and (min-width: 768px) {
-                            margin: 53px 0 59px;
-                            font-size: $title-sm-fs;
+                            margin: 0 0 59px;
+                            font-size: 1.8rem;
+                            line-height: 120%;
                         }
                     }
                     .action-wrapper {
@@ -188,7 +192,7 @@ body {
                             padding: 1rem 4rem;
                             font-size: 1.3rem;
                             @media screen and (min-width: 768px) {
-                                font-size: $title-sm-fs;
+                                font-size: 1.6rem;
 
                             }
                             text-transform: uppercase;
@@ -204,14 +208,14 @@ body {
         }
     }
     footer {
-        font-size: $footer-fs;
+        font-size: 1.3rem;
 
 
         padding: 1rem;
         @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: self-start ;
             padding: 42px 3rem;
         }
         @media screen and (min-width: 1024px) {
